@@ -68,7 +68,7 @@ public class Main {
                 System.out.println("num == 2");
                 break;
             default:
-                System.out.println("lOH");
+                System.out.println("lOH1");
         }
     }
 }

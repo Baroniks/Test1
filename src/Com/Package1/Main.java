@@ -83,5 +83,16 @@ public class Main {
 //            System.out.println("FriksNumber is : " + frik);
 //            frik *=15;
 //        } while(frik < 16);
+        int[] Arr = new int[3];
+        int ResultArr = 0;
+
+        for(int i = 0; i < Arr.length; i++) {
+
+            Arr[i] = java.util.random.RandomGenerator.getDefault().nextInt();
+            ResultArr = Arr[i];
+            ResultArr += ResultArr;
+        }
+
+        System.out.println("Result sum for Arr : " + ResultArr);
     }
 }

@@ -1,5 +1,8 @@
 package Com.Package1;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Scanner;
 
 public class Main {
@@ -25,7 +28,7 @@ public class Main {
 //
 //        boolean isHaker = true;
 
-        Scanner object1 = new Scanner(System.in);
+//        Scanner object1 = new Scanner(System.in);
 //        System.out.print("Give me your name : ");
 //        String UserName = object1.nextLine();
 //        System.out.println("Hello, dog (" + UserName + ")");
@@ -83,16 +86,51 @@ public class Main {
 //            System.out.println("FriksNumber is : " + frik);
 //            frik *=15;
 //        } while(frik < 16);
-        int[] Arr = new int[3];
-        int ResultArr = 0;
+//        int[] Arr = new int[5];
+//        Scanner ObjScan = new Scanner(System.in);
+//
+//        for(int i = 0; i < Arr.length; i++) {
+//            System.out.print("Hello, give me a number : ");
+//            int ValueNumber = ObjScan.nextInt();
+//            Arr[i] = ValueNumber;
+////            Arr[i] = java.util.random.RandomGenerator.getDefault().nextInt();
+//        }
+//        int min = Arr[0];
+//        for(int CountIf = 0; CountIf < Arr.length; CountIf++ ) {
+//         if(Arr[CountIf] < min){
+//          min = Arr[CountIf];
+//         }
+//        }
+//        System.out.println("Min for Array : " + min);
+//        char [][] Symbols1 = new char[2][2];
+//        Symbols1[0][0] = 't';
+//        System.out.println(Symbols1[0][0]);
+//
+//        byte [][] Numbers = new byte[][] {
+//                {5, 7},
+//                {7, 3},
+//                {2, 0}
+//        };
+//        Numbers[1][1] = 67;
+//        System.out.println(Numbers[1][1]);
+//        ArrayList<Integer> numbers = new ArrayList<>();
+//        numbers.add(5);
+//        numbers.add(50);
+//        numbers.add(1, 35);
+//
+//        System.out.println(numbers.get(1));
+//        numbers.remove(1);
+//
+//        for(Integer el :numbers) {
+//            System.out.println(el);
+//        }
 
-        for(int i = 0; i < Arr.length; i++) {
+        LinkedList<Integer> num2 = new LinkedList<>();
+        num2.add(5);
+        num2.add(7);
+        num2.add(2123);
 
-            Arr[i] = java.util.random.RandomGenerator.getDefault().nextInt();
-            ResultArr = Arr[i];
-            ResultArr += ResultArr;
-        }
-
-        System.out.println("Result sum for Arr : " + ResultArr);
+        for(Integer elem : num2)
+            System.out.println(elem);
     }
 }

@@ -59,16 +59,29 @@ public class Main {
 //              System.out.println("Not uspehov");
 //          }
 
-        int num = object1.nextInt();
-        switch (num) {
-            case 1:
-                System.out.println("num == 1");
-                break;
-            case 2 :
-                System.out.println("num == 2");
-                break;
-            default:
-                System.out.println("lOH1");
-        }
+//        int num = object1.nextInt();
+//        switch (num) {
+//            case 1:
+//                System.out.println("num == 1");
+//                break;
+//            case 2 :
+//                System.out.println("num == 2");
+//                break;
+//            default:
+//                System.out.println("lOH1");
+//        for(float i = 150; i >= 10; i/=2) {
+//            System.out.println("Uspehov : " + i);
+//        }
+//        int kek = 0;
+//        while(kek < 10){
+//            System.out.println("Keks : " + kek);
+//            kek++;
+//        }
+//
+//        float frik = 15;
+//        do {
+//            System.out.println("FriksNumber is : " + frik);
+//            frik *=15;
+//        } while(frik < 16);
     }
 }

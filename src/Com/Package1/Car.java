@@ -1,6 +1,7 @@
 package Com.Package1;
 
 public class Car extends Transport {
+    public Dviglo dviglo = new Dviglo();
 
     public Car(float speed, int weight, String color, byte[] coordinat) {
       super(speed, weight, color, coordinat);
@@ -10,7 +11,7 @@ public class Car extends Transport {
 
     @Override
     public void MoveObject(float speed) {
-        System.out.println("Uspehov" + speed);
+        System.out.println("Dviglo gonyaet so speed : " + speed);
     }
 
     @Override

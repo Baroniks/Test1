@@ -150,13 +150,29 @@ public class Main {
 //            ChislaOtDogs = 0;
 //        }
 //        SummArr(ArrOfFloat);
-          Car BMW = new Car(250.5f, 1500, "green", new byte[] {0, 0, 0});
-
-          Truck Gruzovik = new Truck(5600, new byte[] {100, 0, 50});
-          Gruzovik.SetSpeedValue(250.4f, 2700, "white", new byte[] {0, 50, 99}, true);
-          System.out.println(Gruzovik.GetValues());
+//          Car BMW = new Car(250.5f, 1500, "green", new byte[] {0, 0, 0});
+//          BMW.dviglo.SetValues(true, 15);
+//          BMW.dviglo.info();
+//
+//          Truck Gruzovik = new Truck(5600, new byte[] {100, 0, 50});
+//          Gruzovik.SetSpeedValue(250.4f, 2700, "white", new byte[] {0, 50, 99}, true);
+//          Gruzovik.dviglo.SetValues(false, 15000);
+//          Gruzovik.dviglo.info();
+//          System.out.println(Gruzovik.GetValues());
 
 //          Gruzovik.getLoaded();
+
+        Car flyCar = new Car(250.5f, 3600, "orange", new byte[] {0, 14, 56}) {
+            @Override
+            public void MoveObject(float speed) {
+                super.MoveObject(speed);
+
+                this.dviglo.isReady(true);
+                System.out.println("Mashina ne govno, letaet");
+            }
+        };
+
+        flyCar.MoveObject(356);
     }
 
 //    public static int SummFunc(Integer a, Integer b) {

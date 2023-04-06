@@ -3,6 +3,7 @@ package Com.Package1;
 public class Truck extends Transport{
 
     private boolean isLoaded;
+    public Dviglo dviglo = new Dviglo();
 
     public Truck(int weight, byte[] coordinat) {
       super(weight, coordinat);

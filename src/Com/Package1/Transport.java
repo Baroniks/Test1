@@ -37,4 +37,27 @@ public abstract class Transport {
         }
         return info + CoordinateValue;
     }
+
+    class Dviglo {
+        private  boolean isReady;
+        private int kilometers;
+
+        public void SetValues(boolean isReady, int km){
+            this.isReady = isReady;
+            this.kilometers = km;
+        }
+
+        public void isReady(boolean isReady) {
+          this.isReady = isReady;
+        }
+
+        public void info() {
+            if(isReady) {
+                System.out.println("Chetkiy Dviglo");
+            }
+            else {
+                System.out.println("Dviglo govno, on proehal " + kilometers + " kilometrs.");
+            }
+        }
+    }
 }

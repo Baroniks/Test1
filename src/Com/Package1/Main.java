@@ -9,7 +9,7 @@ public class Main {
 
     public static void main(String[] args) {
 //        int AgeOfUser = 56;
-//        //string UserName = "Russka Ivan";
+//        string UserName = "Russka Ivan";
 //        System.out.println("Default User Age : " + AgeOfUser + ".");
 //        AgeOfUser = 34;
 //        System.out.println("Age none default user : " + AgeOfUser + ".");
@@ -125,12 +125,54 @@ public class Main {
 //            System.out.println(el);
 //        }
 
-        LinkedList<Integer> num2 = new LinkedList<>();
-        num2.add(5);
-        num2.add(7);
-        num2.add(2123);
+//        LinkedList<Integer> num2 = new LinkedList<>();
+//        num2.add(5);
+//        num2.add(7);
+//        num2.add(2123);
+//
+//        for(Integer elem : num2) {
+//          System.out.println(elem);
+//    }
+//        InfoFunc("Fucking paranoya");
+//        int Result3 = SummFunc(1 ,5);
+//        int Result2 = SummFunc(5, Result3);
+//        InfoFunc("Itogo : " + String.valueOf(Result2));
+//        float[] ArrayOfFloat = new float[] {5, 15, 34, 56};
 
-        for(Integer elem : num2)
-            System.out.println(elem);
+//        System.out.println(String.valueOf(SummArr(ArrayOfFloat)));
+//        Scanner ScannerObject = new Scanner(System.in);
+//        float[] ArrOfFloat    = new float[] {0, 0, 0};
+//
+//        for(int i = 0; i < 3; i++) {
+//            System.out.println("Дай числа : ");
+//            float ChislaOtDogs = ScannerObject.nextFloat();
+//            ArrOfFloat[i] = ChislaOtDogs;
+//            ChislaOtDogs = 0;
+//        }
+//        SummArr(ArrOfFloat);
+          Car BMW = new Car(250.5f, 1500, "green", new byte[] {0, 0, 0});
+
+          Truck Gruzovik = new Truck(5600, new byte[] {100, 0, 50});
+          Gruzovik.SetSpeedValue(250.4f, 2700, "white", new byte[] {0, 50, 99}, true);
+          System.out.println(Gruzovik.GetValues());
+//          Gruzovik.getLoaded();
     }
+
+//    public static int SummFunc(Integer a, Integer b) {
+//        int Result =  a + b;
+//        String Rez = "Result function : " + Result;
+//        InfoFunc(Rez);
+//        return Result;
+//    }
+//    public static void InfoFunc(String Words) {
+//        System.out.println(Words);
+//    }
+//    public static float SummArr(float[] Arr) {
+//      float Summ = 0;
+//      for(int i = 0; i < Arr.length; i++) {
+//          Summ += Arr[i];
+//      }
+//      System.out.println("Result summ for Arr : " + Summ);
+//      return  Summ;
+//    }
 }

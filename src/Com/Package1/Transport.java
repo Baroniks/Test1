@@ -1,6 +1,6 @@
 package Com.Package1;
 
-public class Transport {
+public abstract class Transport {
 
     protected float SpeedCar;
     protected int   WeightCar;
@@ -18,6 +18,9 @@ public class Transport {
       this.Coordinate = coordinat;
 //        System.out.println(this.GetValues());
     }
+
+    public abstract void MoveObject(float speed);
+    public abstract boolean StopObject();
 
     protected void SetSpeedValue(float speed, int weight, String color, byte[] coordinat) {
       this.SpeedCar   = speed;

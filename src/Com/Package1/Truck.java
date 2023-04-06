@@ -8,6 +8,17 @@ public class Truck extends Transport{
       super(weight, coordinat);
     }
 
+    @Override
+    public void MoveObject(float speed) {
+        System.out.println("Uspeshnii : " + speed);
+    }
+
+    @Override
+    public boolean StopObject() {
+        this.SpeedCar = 0;
+        return true;
+    }
+
     public Truck(int weight, byte[] coordinat, boolean isLoaded) {
         super(weight, coordinat);
         this.isLoaded = isLoaded;

@@ -155,6 +155,7 @@ public class Main {
           Truck Gruzovik = new Truck(5600, new byte[] {100, 0, 50});
           Gruzovik.SetSpeedValue(250.4f, 2700, "white", new byte[] {0, 50, 99}, true);
           System.out.println(Gruzovik.GetValues());
+
 //          Gruzovik.getLoaded();
     }
 

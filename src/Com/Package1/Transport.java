@@ -22,6 +22,8 @@ public abstract class Transport {
     public abstract void MoveObject(float speed);
     public abstract boolean StopObject();
 
+    public Transport(){};
+
     protected void SetSpeedValue(float speed, int weight, String color, byte[] coordinat) {
       this.SpeedCar   = speed;
       this.WeightCar  = weight;

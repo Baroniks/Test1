@@ -1,5 +1,7 @@
 package Com.Package1;
 
+import Com.Package1.Database.database;
+
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -173,6 +175,44 @@ public class Main {
         };
 
         flyCar.MoveObject(356);
+
+        database db = new database();
+
+        informat();
+        informat("nigga");
+
+        Person obj1 = new Person();
+        Person obj2 = new Person();
+        Person.getCount();
+        Person obj3 = new Person();
+        Person.getCount();
+        Person obj4 = new Person();
+        Person.getCount();
+//        Person.count = 5;
+//        System.out.println(Person.count);
+
+        final int counter = 10; // = const for turbo
+
+        Car car1 = new Car();
+        car1.setLight(true);
+        car1.migatFarami();
+
+    }
+
+    public static void informat() {
+        System.out.println("Hy, nigga, uspehov");
+    }
+
+    public static void informat(String word) {
+        System.out.println(word + "1");
+    }
+
+    public static void informat(int word) {
+        System.out.println(word + "1");
+    }
+
+    public static void informat(String word, String word2) {
+        System.out.println(word + "1");
     }
 
 //    public static int SummFunc(Integer a, Integer b) {

@@ -1,7 +1,10 @@
 package Com.Package1;
 
-public class Car extends Transport {
+public class Car extends Transport implements iLights{
     public Dviglo dviglo = new Dviglo();
+    private boolean OpenClose;
+
+    public Car(){};
 
     public Car(float speed, int weight, String color, byte[] coordinat) {
       super(speed, weight, color, coordinat);
@@ -20,4 +23,13 @@ public class Car extends Transport {
         return true;
     }
 
+    @Override
+    public void setLight(boolean set) {
+      this.OpenClose = set;
+    }
+
+    @Override
+    public void migatFarami() {
+        System.out.println("Promorgali farami");
+    }
 }
